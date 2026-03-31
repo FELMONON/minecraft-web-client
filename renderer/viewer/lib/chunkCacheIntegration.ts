@@ -192,7 +192,7 @@ export function storeSectionBlockStates (
  * Get stored block state IDs for a section
  */
 export function getSectionBlockStates (sectionKey: string): Uint16Array | null {
-  return sectionBlockStates.get(sectionKey) || null
+  return sectionBlockStates.get(sectionKey) ?? null
 }
 
 /**
